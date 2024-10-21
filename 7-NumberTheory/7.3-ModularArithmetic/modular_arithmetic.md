@@ -6,6 +6,13 @@
 
 (x - y) mod n = ((x mod n) - (y mod n)) mod n
 
+# Handle negative number
+x mod n = (x + k.n) mod n; 
+where k is an integer such that 0 <= (x + k.n) < n
+
+Example:
+-41 mod 100 = (-41 + 100) mod 100 = 59 mod 100
+
 # Multiplication
 
 xy mod n = (x mod n)(y mod n) mod n
